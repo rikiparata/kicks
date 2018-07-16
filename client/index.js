@@ -4,10 +4,13 @@ import {render} from 'react-dom'
 import App from './components/App'
 
 import {Provider} from 'react-redux'
-import {createStore} from 'redux'
+import {createStore, compose, applyMiddleware} from 'redux'
 import reducers from './reducers/index'
+import thunk from 'redux-thunk'
 
-const store = createStore(reducers)
+const store = createStore(reducers, compose(
+  applyMiddleware(thunk)
+))
 
 document.addEventListener('DOMContentLoaded', () => {
     render(
