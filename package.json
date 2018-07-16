@@ -1,0 +1,13 @@
+{
+  "name": "Study",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "<you@example.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}
